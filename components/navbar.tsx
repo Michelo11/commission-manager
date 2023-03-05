@@ -15,6 +15,7 @@ export default function Navbar() {
                         alt="propic"
                         width={32}
                         height={32}
+                        draggable={false}
                     />
                     Michele Manna
                 </div>
