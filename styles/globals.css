@@ -11,7 +11,7 @@ body {
     border: solid 2px transparent;
     border-radius: 7px;
     background-image: linear-gradient(#171717, #171717),
-      linear-gradient(260.05deg, #35DF91 0%, #006235 100%);
+      linear-gradient(260.05deg, #1e665b 0%, #1e4a49 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     padding: 4px;
