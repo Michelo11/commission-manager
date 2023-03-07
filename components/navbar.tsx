@@ -7,7 +7,7 @@ export default function Navbar() {
   const { data: session } = useSession();
   return (
     <>
-      <nav className="bg-[#171717] flex text-white h-14 items-center font-medium px-4">
+      <nav className="bg-[#171717] flex justify-between text-white h-14 items-center font-medium px-4">
         <div className="flex justify-between items-center gap-2 w-40">
           <Image
             className="rounded-full"
@@ -21,7 +21,7 @@ export default function Navbar() {
           />
           Michele Manna
         </div>
-        <div className="gap-3 flex mx-auto">
+        <div className="gap-3 flex">
           <Link href={"/"}>Home</Link>
           <Link href={"/"}>Portfolio</Link>
           <Link href={"/"}>Purchases</Link>

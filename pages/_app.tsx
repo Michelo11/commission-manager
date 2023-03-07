@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import { Inter, Open_Sans } from "next/font/google";
 import type { AppProps } from "next/app";
 import { SessionProvider } from "next-auth/react";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Open_Sans({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

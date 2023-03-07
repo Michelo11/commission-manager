@@ -1,21 +1,15 @@
-import Image from "next/image";
+import Informations from "@/components/informations";
 
 export default function Header() {
   return (
     <>
       <div>
-        <div className="bg-gradient-to-br from-[#18181b] via-[#1e4a49] to-[#1e665b] w-full h-80 block relative">
-          <div className="absolute bottom-0 translate-y-1/2 pl-10">
-            <Image
-              className="rounded-full border-solid border-[#1c1c1c] border-2 bg-[#292929]"
-              src={
-                "https://cdn.discordapp.com/avatars/573539095452844052/d639e55d46b3c5b443fa04b43fb0d308.webp?size=512"
-              }
-              alt="propic"
-              width={200}
-              height={200}
-              draggable={false}
-            />
+        <div className="flex flex-col justify-center items-center bg-gradient-to-br from-[#18181b] via-[#1e4a49] to-[#1e665b] w-full h-72 relative">
+          <h1 className="translate-x-8 tracking-widest w-fit flex justify-center items-center text-3xl font-light">
+            PROFILE
+          </h1>
+          <div className="absolute bottom-0 left-0 translate-y-2/3 pl-6 w-full">
+            <Informations />
           </div>
         </div>
       </div>
