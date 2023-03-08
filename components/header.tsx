@@ -8,7 +8,7 @@ export default function Header() {
           <h1 className="translate-x-8 tracking-widest w-fit flex justify-center items-center text-3xl font-light">
             PROFILE
           </h1>
-          <div className="absolute bottom-0 left-0 translate-y-2/3 pl-6 w-full">
+          <div className="absolute bottom-0 left-0 translate-y-2/3 pl-6 w-1/4">
             <Informations />
           </div>
         </div>
