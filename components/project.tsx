@@ -15,11 +15,11 @@ export default function Project({ name, description, language }: any) {
         <p className="text-[15px] grey-text">
           {description ? description : "No description"}
         </p>
-        <p
-          className="mt-auto pt-2 text-sm"
-        >
-          {language}
-        </p>
+          <p
+            className="mt-auto pt-2 text-sm flex items-center gap-2"
+          >
+            <span className={"block rounded-full w-4 h-4 " + language}></span>{language}
+          </p>
       </Link>
     </>
   );

@@ -1,3 +1,4 @@
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import useSWR from "swr";
 import { Fetcher } from "swr";
@@ -5,6 +6,7 @@ const fetcher: Fetcher<any, string> = (args: string) =>
   fetch(args).then((res) => res.json());
 
 export default function Informations() {
+  const { data: session } = useSession();
   const { data } = useSWR("/api/github/profile", fetcher);
   return (
     <div className="w-full">
@@ -25,12 +27,14 @@ export default function Informations() {
         <p className="text-[#b5b5b5] text-[15px]">
           {data && data.bio ? data.bio : "No bio"}
         </p>
-        <a
-          href={"https://github.com/settings/profile"}
-          className="text-[15px] bg-[#363637] rounded w-1/2 h-9 mt-4 border-solid border-[#1c1c1ca6] border-2 flex items-center justify-center"
-        >
-          Edit Profile
-        </a>
+        {session && (
+          <a
+            href={"https://github.com/settings/profile"}
+            className="text-[15px] bg-[#363637] rounded w-1/2 h-9 mt-4 border-solid border-[#1c1c1ca6] border-2 flex items-center justify-center"
+          >
+            Edit Profile
+          </a>
+        )}
       </div>
     </div>
   );

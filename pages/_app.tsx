@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "@/styles/languages.css";
 import Head from "next/head";
 import { Inter, Open_Sans } from "next/font/google";
 import type { AppProps } from "next/app";

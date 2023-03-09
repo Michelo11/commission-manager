@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Header />
-      <div className="ml-auto mt-4 w-3/4 grid grid-rows-4  grid-cols-4 gap-4 pr-6">
+      <div className="ml-auto mt-4 w-3/4 grid grid-cols-4 gap-4 pr-6 auto-rows-fr">
         {data &&
           data.map((project: any) => (
             <Project
